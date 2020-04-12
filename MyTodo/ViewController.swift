@@ -62,14 +62,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     }
 
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//
-//        // アイテム削除処理
-//        TodoData.remove(at: indexPath.row)
-//        let indexPaths = [indexPath]
-//        tableView.deleteRows(at: indexPaths, with: .automatic)
-//
-//    }
     //スワイプしたセルを削除
      func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
          // アイテム削除処理
@@ -77,4 +69,5 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
          let indexPaths = [indexPath]
          tableView.deleteRows(at: indexPaths, with: .automatic)
      }
+
 }
